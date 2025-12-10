@@ -46,20 +46,6 @@ node scripts/testConnection.js
 ```
 Si le message indique `Connected to MongoDB Atlas successfully`, la connexion est ok.
 
-Notes sur `.env` et la publication publique
-- Meilleure pratique : **ne pas** committer de secrets. Donne seulement `project/.env.example` dans le repo public.
-- Si tu choisis de laisser `project/.env` pour faciliter la correction, indique dans le README que les identifiants sont provisoires et qu'ils seront supprimés ou rotatés après correction.
-
-Importer des données (option pour le correcteur)
-- Le correcteur peut importer un JSON via MongoDB Compass (Menu *Import Data*) s'il souhaite voir des jeux d'exemple.
-- Si souhaité, je peux ajouter un script `scripts/seed.js` et la commande `npm run seed` pour pré-remplir la base (me le demander).
-
-Déploiement / utilisation
-- Le projet est fonctionnel pour un rendu universitaire : endpoints CRUD, validations, filtrage, stats, système de favoris, export JSON et une UI minimale.
-- Aucun `docker-compose.yml` n'est fourni par défaut (tu as demandé de ne pas en ajouter). Si tu veux plus de reproductibilité, je peux en fournir un sur demande.
 
 Support & maintenance
 - Tests unitaires/intégration : exécuter `npm test`.
-- Pour toute modification (ex : ajout d'indexes, seed, CI), demander via issue ou me le dire et je m'en occupe.
-
-Bonne soumission !
